@@ -31,6 +31,22 @@
     font-weight: normal;
     margin: 0;
   }
+  .tag-heading {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .tags {
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-size: 12px;
+      display: inline-block;
+      margin-right: 0.5em;
+      text-transform: capitalize;
+    }
+  }
 }
 
 .portfolio-header {

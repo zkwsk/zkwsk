@@ -21,7 +21,7 @@
         "webpack",
         "docker",
         "accessibility",
-        "seo"
+        "SEO"
       ]
     },
       {
@@ -56,11 +56,11 @@
         "description": "My main client as a consultant for IT Minds was Danmarks Radio (DR), for whom I was helping out migrating DR.DK to Drupal. My work for DR was cherished and eventually led to permanent employment.",
         "label": "",
         "portfolio": {
-          "show": true,
+          "show": false,
           "background-color": "white",
           "backdrop-color": "#0a2342",
           "link": "https://it-minds.dk",
-          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/it-minds_400x400.png",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/IT-Minds-wide.png",
           "display-logo": true
         },
         "tags": [
@@ -91,6 +91,34 @@
           "Javascript",
           "UX Design",
           "Wireframing"
+        ]
+      },
+      {
+        "period_start": "2013-10",
+        "period_end": "2013-12",
+        "title": "Front-end Developer & UX Designer",
+        "employer": "Fourp.io",
+        "description": "Co-founded a collaborative writing platform, which unfortunately never made it to market.",
+        "label": "",
+        "portfolio": {
+          "show": true,
+          "background-color": "",
+          "backdrop-color": "#274060",
+          "link": "",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/fourpio_logo.svg",
+          "display-logo": true
+        },
+        "tags": [
+          "Php",
+          "Javascript",
+          "CSS",
+          "UX Design"
+        ],
+        "gallery": [
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Fourpio_Wireframe.jpg",
+            "description": "Fourp.io signup page."
+          }
         ]
       },
       {

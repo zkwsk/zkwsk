@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import './portfolio-item.css';
 import DateToString from '../DateToString';
+import Gallery from "../gallery/Gallery";
 
 class PortfolioItem extends Component {
   render() {
 
-    const {period_start, period_end, title, employer, description, portfolio, label} = this.props.position;
-
-    console.log(description);
-
+    const {period_start, period_end, title, employer, description, portfolio, label, tags, gallery} = this.props.position;
     const {show, link, icon } = portfolio;
 
     if (!show) {
       return null;
     }
 
-    let img, header, modifier, labelElm, linkElm, caseBtn = '';
+    // Conditionally rendered elements
+    let img, header, modifier, labelElm, linkElm, caseBtn, galleryElm = '';
 
     const bgColor = portfolio['background-color'];
     const dropColor = portfolio['backdrop-color'];
@@ -28,6 +27,10 @@ class PortfolioItem extends Component {
 
     if (link) {
       linkElm = <div className="employer-link"><a href={link}>Visit {employer}'s website</a></div>
+    }
+
+    if (gallery) {
+      galleryElm = <Gallery gallery={gallery}/>
     }
 
 
@@ -44,6 +47,13 @@ class PortfolioItem extends Component {
           <p>{description}</p>
           {caseBtn}
           {linkElm}
+          <h4 className="tag-heading">Tags:</h4>
+          <ul className="tags">
+            {tags.map((tag, i) => (
+              <li key={i}>{tag}</li>
+            ))}
+          </ul>
+          {galleryElm}
         </div>
       </div>
     );
