@@ -1,36 +1,124 @@
 {
   "cv": {
-    "positions": [
+    "positions": [{
+      "period_start": "2016-01",
+      "period_end": "",
+      "title": "Web Developer",
+      "employer": "Danmarks Radio",
+      "description": "I have written a case about my work at Danmarks Radio.",
+      "label": "case",
+      "portfolio": {
+        "show": true,
+        "background-color": "",
+        "backdrop-color": "#f46197",
+        "link": "https://dr.dk",
+        "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/dr_logo.svg",
+        "display-logo": true
+      },
+      "tags": [
+        "react",
+        "symfony",
+        "webpack",
+        "docker",
+        "accessibility",
+        "seo"
+      ]
+    },
       {
-        "period_start": "October 2014",
-        "period_end": "Now",
-        "title": "Web Developer",
-        "employer": "Danmarks Radio",
-        "descriptions": "...",
+        "period_start": "2017-04",
+        "period_end": "",
+        "title": "Mentor",
+        "employer": "Hack Your Future",
+        "description": "I'm part of a team that teaches refugees HTML, Javscript, React and Node.js with the aim of giving them a foothold in the job market and improving integration. Aside from contributing to a political cause which I think is very important, teaching helps me consolidate my knowledge in web development.",
+        "label": "",
+        "portfolio": {
+          "show": true,
+          "background-color": "#fff",
+          "backdrop-color": "#00d6a4",
+          "link": "http://www.hackyourfuture.net/",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/hyf-logo-01.svg",
+          "display-logo": true
+        },
         "tags": [
+          "javascript",
           "react",
-          "drupal",
-          "symfony",
+          "node.js",
           "webpack",
-          "docker",
-          "accessibility",
-          "seo"
+          "teaching",
+          "UX Design"
         ]
       },
       {
-        "period_start": "October 2014",
-        "period_end": "Now",
+        "period_start": "2014-10",
+        "period_end": "2016-01",
+        "title": "Consultant",
+        "employer": "IT Minds",
+        "description": "My main client as a consultant for IT Minds was Danmarks Radio (DR), for whom I was helping out migrating DR.DK to Drupal. My work for DR was cherished and eventually led to permanent employment.",
+        "label": "",
+        "portfolio": {
+          "show": true,
+          "background-color": "white",
+          "backdrop-color": "#0a2342",
+          "link": "https://it-minds.dk",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/it-minds_400x400.png",
+          "display-logo": true
+        },
+        "tags": [
+          "drupal",
+          "jQuery",
+          "NPM",
+          "webpack",
+          "accessibility"
+        ]
+      },
+      {
+        "period_start": "2014-03",
+        "period_end": "2014-07",
         "title": "Web Developer",
-        "employer": "Danmarks Radio",
-        "descriptions": "...",
+        "employer": "Airtame",
+        "description": "I did full-stack web development in Ruby on Rails. My main project was a custom-build internal system designed for manageing backer orders from their very succesfull Crowdfunding Campaign, but I also did some work on the user-facing website.",
+        "label": "",
+        "portfolio": {
+          "show": true,
+          "background-color": "",
+          "backdrop-color": "#01baef",
+          "link": "https://airtame.com",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/airtame.svg",
+          "display-logo": true
+        },
+        "tags": [
+          "Ruby on Rails",
+          "Javascript",
+          "UX Design",
+          "Wireframing"
+        ]
+      },
+      {
+        "period_start": "2013-09",
+        "period_end": "",
+        "title": "Web Developer",
+        "employer": "Freelance",
+        "description": "...",
+        "label": "",
+        "portfolio": {
+          "show": false,
+          "background-color": "",
+          "backdrop-color": "",
+          "link": "https://zkwsk.co",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/zkwsk_logo.svg",
+          "display-logo": true
+        },
+        "link": "",
+        "icon": "",
         "tags": [
           "react",
           "drupal",
-          "symfony",
+          "wordpress",
+          "UX Design",
+          "Wireframing",
+          "Visual design",
           "webpack",
-          "docker",
-          "accessibility",
-          "seo"
+          "docker"
         ]
       }
     ]

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import "colors.scss";
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -11,4 +12,12 @@ h2 {
 
 p {
   font-weight: 100;
+}
+
+a {
+  color: $main-light;
+
+  &:hover {
+    color: $emphasis;
+  }
 }

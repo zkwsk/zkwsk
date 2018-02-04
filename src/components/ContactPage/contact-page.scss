@@ -1,0 +1,8 @@
+@import '../../style/_shared.scss';
+
+.contact-page {
+  background-color: $main-dark;
+  min-height: $default-page-height;
+  padding: $standard-margin * 2 $standard-margin;
+  color: $white;
+}

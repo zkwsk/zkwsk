@@ -7,8 +7,7 @@ $vertical-displacement: 0.70;
 .introduction-page {
 	background-color: $main-dark;
 	min-height: $default-page-height;
-	padding: $standard-margin;
-	padding-top: $standard-margin * 2;
+	padding: $standard-margin * 2 $standard-margin;
 	color: $white;
 }
 

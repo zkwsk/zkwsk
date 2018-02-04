@@ -1,0 +1,7 @@
+@import '../../style/_shared.scss';
+
+.portfolio-page {
+  background-color: $grey;
+  min-height: $default-page-height;
+  padding: 2*$standard-margin $standard-margin;
+}
