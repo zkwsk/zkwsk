@@ -1,0 +1,38 @@
+{
+  "cv": {
+    "positions": [
+      {
+        "period_start": "October 2014",
+        "period_end": "Now",
+        "title": "Web Developer",
+        "employer": "Danmarks Radio",
+        "descriptions": "...",
+        "tags": [
+          "react",
+          "drupal",
+          "symfony",
+          "webpack",
+          "docker",
+          "accessibility",
+          "seo"
+        ]
+      },
+      {
+        "period_start": "October 2014",
+        "period_end": "Now",
+        "title": "Web Developer",
+        "employer": "Danmarks Radio",
+        "descriptions": "...",
+        "tags": [
+          "react",
+          "drupal",
+          "symfony",
+          "webpack",
+          "docker",
+          "accessibility",
+          "seo"
+        ]
+      }
+    ]
+  }
+}
