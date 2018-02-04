@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import LogoPage from '../components/LogoPage';
+import Logo from '../components/LogoPage/LogoPage';
+import Introduction from '../components/IntroductionPage/IntroductionPage';
 
 class Main extends Component {
   render() {
     return (
       <main role="main">
-        <h1>Hello</h1>
-        <LogoPage></LogoPage>
+        <Logo></Logo>
+        <Introduction></Introduction>
       </main>
     );
   }

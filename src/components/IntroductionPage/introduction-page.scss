@@ -1,0 +1,76 @@
+@import '../../style/_shared.scss';
+
+$circle-width: 35vw;
+$horizontal-displacement: 0.40;
+$vertical-displacement: 0.70;
+
+.introduction-page {
+	background-color: $main-dark;
+	min-height: $default-page-height;
+	padding: $standard-margin;
+	padding-top: $standard-margin * 2;
+	color: $white;
+}
+
+.venn-diagram {
+	position: relative;
+	z-index: 0;
+	height: 1.7 * $circle-width;
+	@include center-children-top
+}
+
+.circle-technology, .circle-design, .circle-business {
+	@include circle($circle-width);
+
+	@include center-children;
+
+	.label {
+		font-size: $circle-width/8;
+		font-weight: 100;
+	}
+}
+
+/*.circle-design {
+	position: relative;
+	background-color: $emphasis;
+	z-index: 1;
+}
+.circle-business {
+	position: absolute;
+	z-index: 2;
+	right: 2vw;
+	background-color: fade-out($main-light, 0.1);
+
+}
+.circle-technology {
+	position: absolute;
+	z-index: 3;
+	left: 2vw;
+	background-color: fade-out($main, 0.1);
+}*/
+
+
+
+.circle-design {
+	position: relative;
+	background-color: $emphasis;
+	z-index: 1;
+}
+.circle-business {
+	position: absolute;
+	margin-left: -($circle-width * $horizontal-displacement);
+	margin-top: ($circle-width * $vertical-displacement);
+	z-index: 2;
+	background-color: fade-out($main-light, 0.1);
+}
+.circle-technology {
+	position: absolute;
+	margin-left: ($circle-width * $horizontal-displacement);
+	margin-top: ($circle-width * $vertical-displacement);
+	z-index: 3;
+	background-color: fade-out($main, 0.1);
+}
+
+p.introduction {
+	padding: 0 $standard-margin * 2;
+}
