@@ -1,0 +1,37 @@
+// Add imports to any shared files here.
+@import "colors.scss";
+@import "fonts.scss";
+@import "mixins.scss";
+@import "variables.scss";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $grey;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: ($standard-margin/2) $standard-margin;
+  background-color: $emphasis;
+  border: none;
+  color: $white;
+  text-decoration: none;
+  margin-bottom: $standard-margin;
+
+  &:hover {
+    background-color: darken($emphasis, 5%);
+    color: $main;
+  }
+}
+
+p {
+  max-width: 650px;
+}

@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './index.css';
 import Main from './containers/Main';
-import LogoPage from './components/LogoPage';
-import NoMatch from './components/404';
+import CaseDR from './containers/CaseDR';
+import CaseTigerspring from './containers/CaseTigerspring';
+import Cv from './containers/CV'
+import NoMatch from './components/404/404';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
@@ -12,7 +14,9 @@ ReactDOM.render(
     <Router>
       <Switch>
         <Route exact path="/" component={Main}/>
-        <Route exact path="/logo" component={LogoPage}/>
+        <Route exact path="/cases/dr" component={CaseDR}/>
+        <Route exact path="/cases/tigerspring" component={CaseTigerspring}/>
+        <Route exact path="/cv" component={Cv}/>
         <Route component={NoMatch}/>
       </Switch>
     </Router>

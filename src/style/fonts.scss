@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import "colors.scss";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+  text-align: center;
+}
+
+p {
+  font-weight: 100;
+}
+
+a {
+  color: $main-light;
+
+  &:hover {
+    color: $emphasis;
+  }
+}

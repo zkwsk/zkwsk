@@ -1,0 +1,19 @@
+@import '../../style/_shared.scss';
+
+.portfolio-page {
+  background-color: $grey;
+  min-height: $default-page-height;
+  padding: 2*$standard-margin $standard-margin;
+}
+
+.portfolio-list {
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: space-around;
+}

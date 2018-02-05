@@ -1,37 +1,365 @@
 {
   "cv": {
-    "positions": [
+    "positions": [{
+      "period_start": "2016-01",
+      "period_end": "",
+      "title": "Web Developer",
+      "employer": "Danmarks Radio",
+      "description": "I have learned a vast amount of technologies, I have watched a large organization go through a major agile transformation and I have been contributing to websites with millions of monthly users. Among the things I have learned at DR is the importance of managing the architecture - both in terms of technology and UI design.",
+      "label": "case",
+      "portfolio": {
+        "show": true,
+        "description": "I have written a case about my work at Danmarks Radio.",
+        "background-color": "",
+        "backdrop-color": "#f46197",
+        "link": "https://dr.dk",
+        "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/dr_logo.svg",
+        "display-logo": true
+      },
+      "tags": [
+        "react",
+        "symfony",
+        "webpack",
+        "docker",
+        "accessibility",
+        "SEO"
+      ],
+      "case": {
+        "gallery": [{
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/artikel_viden.jpg",
+          "description": "An example of a redesigned article. More layouts will be released soon, however."
+        },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/nyhedsoverblikket.jpg",
+            "description": "2018 Redesign of the 'news overview' section found under most artickles."
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mere_om.jpg",
+            "description": "2018 Redesign of the 'more like this' section."
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/navigation.jpg",
+            "description": "Redesign of navigation. Focus on simple aesthetics, usability and accessibility."
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/footer.jpg",
+            "description": "Redesign of navigation. Focus on simple aesthetics, usability and accessibility."
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_liste.gif",
+            "description": "A solution I came up with to allow editors to 'build lists' of content across different types."
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_1.jpg",
+            "description": "Examples of work I have taken part in on dr.dk/mad"
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_2.jpg",
+            "description": "Examples of work I have taken part in on dr.dk/mad"
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_3.jpg",
+            "description": "Examples of work I have taken part in on dr.dk/mad"
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_4.jpg",
+            "description": "Examples of work I have taken part in on dr.dk/mad"
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_5.jpg",
+            "description": "Examples of work I have taken part in on dr.dk/mad"
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_6.jpg",
+            "description": "Examples of work I have taken part in on dr.dk/mad"
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_7.jpg",
+            "description": "Examples of work I have taken part in on dr.dk/mad"
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_8.jpg",
+            "description": "Examples of work I have taken part in on dr.dk/mad"
+          },
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/vejr_widget.jpg",
+            "description": "A weather widget I have built. Originally it was presenting local weather based on the users location, but this feature has since been disabled."
+          }
+        ]
+      }
+    },
       {
-        "period_start": "October 2014",
-        "period_end": "Now",
-        "title": "Web Developer",
-        "employer": "Danmarks Radio",
-        "descriptions": "...",
+        "period_start": "2017-04",
+        "period_end": "",
+        "title": "Mentor",
+        "employer": "Hack Your Future",
+        "description": "I'm part of a team that teaches refugees HTML, Javscript, React and Node.js with the aim of giving them a foothold in the job market and improving integration. Aside from contributing to a political cause which I think is very important, teaching helps me consolidate my knowledge in web development.",
+        "label": "",
+        "portfolio": {
+          "show": true,
+          "description": "I'm part of a team that teaches refugees HTML, Javscript, React and Node.js with the aim of giving them a foothold in the job market and improving integration. Aside from contributing to a political cause which I think is very important, teaching helps me consolidate my knowledge in web development.",
+          "background-color": "#fff",
+          "backdrop-color": "#00d6a4",
+          "link": "http://www.hackyourfuture.net/",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/hyf-logo-01.svg",
+          "display-logo": true
+        },
         "tags": [
+          "javascript",
           "react",
-          "drupal",
-          "symfony",
+          "node.js",
           "webpack",
-          "docker",
-          "accessibility",
-          "seo"
+          "teaching",
+          "UX Design"
+        ],
+        "gallery": [{
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_1.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }, {
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_2.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }, {
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_3.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }, {
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_4.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }, {
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_5.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }]
+      },
+      {
+        "period_start": "2014-10",
+        "period_end": "2016-01",
+        "title": "Consultant",
+        "employer": "IT Minds",
+        "description": "My main client as a consultant for IT Minds was Danmarks Radio (DR), for whom I was helping out migrating DR.DK to Drupal. My work for DR was cherished and eventually led to permanent employment.",
+        "label": "",
+        "portfolio": {
+          "show": false,
+          "description": "My main client as a consultant for IT Minds was Danmarks Radio (DR), for whom I was helping out migrating DR.DK to Drupal. My work for DR was cherished and eventually led to permanent employment.",
+          "background-color": "white",
+          "backdrop-color": "#0a2342",
+          "link": "https://it-minds.dk",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/IT-Minds-wide.png",
+          "display-logo": true
+        },
+        "tags": [
+          "drupal",
+          "jQuery",
+          "NPM",
+          "webpack",
+          "accessibility"
         ]
       },
       {
-        "period_start": "October 2014",
-        "period_end": "Now",
+        "period_start": "2014-03",
+        "period_end": "2014-07",
         "title": "Web Developer",
-        "employer": "Danmarks Radio",
-        "descriptions": "...",
+        "employer": "Airtame",
+        "description": "I did full-stack web development in Ruby on Rails. My main project was a custom-build internal system designed for manageing backer orders from their very succesfull Crowdfunding Campaign, but I also did some work on the user-facing website.",
+        "label": "",
+        "portfolio": {
+          "show": true,
+          "description": "I did full-stack web development in Ruby on Rails. My main project was a custom-build internal system designed for manageing backer orders from their very succesfull Crowdfunding Campaign, but I also did some work on the user-facing website.",
+          "background-color": "",
+          "backdrop-color": "#01baef",
+          "link": "https://airtame.com",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/airtame.svg",
+          "display-logo": true
+        },
+        "tags": [
+          "Ruby on Rails",
+          "Javascript",
+          "UX Design",
+          "Wireframing"
+        ],
+        "gallery": [{
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/airtame_animation.gif",
+          "description": "I built a custom system for managing orders. I designed the UI and built everything in Ruby on Rails."
+        }]
+      },
+      {
+        "period_start": "2013-10",
+        "period_end": "2013-12",
+        "title": "Front-end Developer & UX Designer",
+        "employer": "Fourp.io",
+        "description": "Co-founded a collaborative writing platform, which unfortunately never made it to market.",
+        "label": "",
+        "portfolio": {
+          "show": true,
+          "description": "Co-founded a collaborative writing platform, which unfortunately never made it to market.",
+          "background-color": "",
+          "backdrop-color": "#274060",
+          "link": "",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/fourpio_logo.svg",
+          "display-logo": true
+        },
+        "tags": [
+          "Php",
+          "Javascript",
+          "CSS",
+          "UX Design"
+        ],
+        "gallery": [{
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Fourpio_Wireframe.jpg",
+          "description": "Fourp.io signup page."
+        }]
+      },
+      {
+        "period_start": "2013-09",
+        "period_end": "",
+        "title": "Web Developer",
+        "employer": "Freelance",
+        "description": "When not busy with my day-job I have taken on smaller projects as a freelancer.",
+        "label": "",
+        "portfolio": {
+          "show": false,
+          "description": "",
+          "background-color": "",
+          "backdrop-color": "",
+          "link": "https://zkwsk.co",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/zkwsk_logo.svg",
+          "display-logo": true
+        },
+        "link": "",
+        "icon": "",
         "tags": [
           "react",
           "drupal",
-          "symfony",
+          "wordpress",
+          "UX Design",
+          "Wireframing",
+          "Visual design",
           "webpack",
-          "docker",
-          "accessibility",
-          "seo"
+          "docker"
         ]
+      },
+      {
+        "period_start": "2013-07",
+        "period_end": "2013-09",
+        "title": "Front-end Developer & UX Designer",
+        "employer": "Tigerspring Records",
+        "description": "In 2013 I traveled with Tigerspring on a 'workcation' adventure to Mauritius, where we combined building a software-startup with a tropical vacation. During the weekdays we coded from early morning till late evening and during weekends we went sight-seeing on the Island. The product was a game'ified platform with the purpose of crowdsourcing the tasks of an A&R manager. Every week Tigerspring would release exclusive content from future signings and users would have to guess which artists would be succesful. The product, which was called Wingzon, was not officially launched until 2016 and unfortunately it failed to gain the necessary traction in the market.",
+        "label": "case",
+        "portfolio": {
+          "show": false,
+          "description": "I have written a case about my work for Tigerspring Records.",
+          "background-color": "",
+          "backdrop-color": "#00d6a4",
+          "link": "http://www.tigerspring.net/",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/tigerspring.png",
+          "display-logo": true
+        },
+        "tags": [
+          "Workcation",
+          "UX Design",
+          "Wireframing",
+          ".NET",
+          "Razor"
+        ]
+      },
+      {
+        "period_start": "2011-08",
+        "period_end": "2012-07",
+        "title": "Instructor",
+        "employer": "Copenhagen Business School",
+        "description": "As an Instructor at CBS I was teaching exercise-focused classes in the following subjects: Human-Computer Interaction, Java programming, Distributed Systems. I put a lot of pride into preparing good exercises and trying to tailor and make them relevant for the students. And besides enjoying 'passing on' kowledge I learned how valuable it may be to teach something you have relatively recently learned yourself. Part-time position, 15-20 hours/week.",
+        "label": "case",
+        "portfolio": {
+          "show": false
+        },
+        "tags": [
+          "Usbility testing",
+          "UX Design",
+          "Java",
+          "Networking"
+        ]
+      },
+      {
+        "period_start": "2011-05",
+        "period_end": "2010-09",
+        "title": "Technical Support Engineer",
+        "employer": "Agillic",
+        "description": "Front-end web development in custom-built Marketing Automation Platform, Agillic Dialogue. Part-time position, 15 hours/week.",
+        "label": "case",
+        "portfolio": {
+          "show": false
+        },
+        "tags": [
+          "HTML",
+          "CSS3",
+          "Java",
+          "JSP"
+        ]
+      },
+      {
+        "period_start": "2009-05",
+        "period_end": "2010-07",
+        "title": "Quality Assurance Student Assistant",
+        "employer": "Formpipe",
+        "description": "Testing of case-management and other governmental administration systems. Part-time position, 10 hours/week.",
+        "label": "case",
+        "portfolio": {
+          "show": false
+        },
+        "tags": [
+          "HTML",
+          "CSS3",
+          "Java",
+          "JSP"
+        ]
+      },
+      {
+        "period_start": "2006-07",
+        "period_end": "2009-05",
+        "title": "Sales consultant",
+        "employer": "Humac",
+        "description": "B2B and consumer sales and support of Apple-equipment.",
+        "label": "case",
+        "portfolio": {
+          "show": false
+        },
+        "tags": [
+          "HTML",
+          "CSS3",
+          "Java",
+          "JSP"
+        ]
+      }
+    ],
+    "education": [{
+      "period_start": "2012",
+      "period_end": "2014",
+      "degree": "Msc. Business Administration & Information Systems - Cand.Merc.IT",
+      "school": "Copenhagen Business School",
+      "description": "I did the IT Management and Business Economics specilization track."
+    },
+      {
+        "period_start": "2013",
+        "period_end": "2014",
+        "degree": "Master in Management",
+        "school": "University of Mannheim (Mannheim Business School)",
+        "description": "I did two exchange semesters and participated in the Double-Degree programme between Mannheim University and Copenhagen Business School."
+      },
+      {
+        "period_start": "2008",
+        "period_end": "2011",
+        "degree": "Bsc. Business Administration & Computer Science - HA(dat.)",
+        "school": "Copenhagen Business School"
+      },
+      {
+        "period_start": "2004",
+        "period_end": "2006",
+        "degree": "Professional music training, Piano",
+        "school": "MGK Odense"
+      },
+      {
+        "period_start": "2001",
+        "period_end": "2004",
+        "degree": "Studentereksamen (High school diploma)",
+        "school": "Sct. Knuds Gymnasium, Odense"
       }
     ]
   }

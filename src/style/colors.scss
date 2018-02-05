@@ -1,0 +1,22 @@
+// Color palette
+$green: #00d6a4;
+$pink: #f46197;
+$dark-blue: #0a2342;
+$medium-blue: #274060;
+$light-blue: #01baef;
+
+$white: white;
+$black: black;
+$grey: hsl(0, 0, 97);
+
+// Pallette assignments
+$main: $medium-blue;
+$main-dark: $dark-blue;
+$main-light: $light-blue;
+
+$identity: $green;
+$emphasis: $pink;
+
+// Build variations
+$white-blend: fade-out($white, 0.1);
+$black-blend: fade-out($black, 0.2);

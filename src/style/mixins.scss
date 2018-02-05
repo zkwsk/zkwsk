@@ -1,0 +1,35 @@
+// Horizontally and vertically center children using flexbox.
+@mixin center-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin center-children-top {
+  @include center-children;
+
+  > * {
+    align-self: flex-start;
+  }
+}
+
+@mixin center-children-bottom {
+  @include center-children;
+
+  > * {
+    align-self: flex-end;
+  }
+}
+
+
+@mixin circle($diameter) {
+  border-radius: 50%;
+  width: $diameter;
+  height: $diameter;
+}
+
+@mixin shadow() {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}

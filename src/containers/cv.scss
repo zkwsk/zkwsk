@@ -1,0 +1,16 @@
+@import '../style/_shared.scss';
+
+.cv-list {
+
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.cv-page {
+  > h2, > p {
+    text-align: left;
+    margin: (2 * $standard-margin) $standard-margin;
+    border-left: 8px solid transparent;
+  }
+}

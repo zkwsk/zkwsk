@@ -1,0 +1,8 @@
+@import '../../style/_shared.scss';
+
+.header-cv {
+  border-left: 8px solid;
+  border-color: $emphasis;
+  min-height: 200px;
+  padding: (2*$standard-margin) $standard-margin;
+}

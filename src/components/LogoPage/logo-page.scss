@@ -1,0 +1,25 @@
+@import '../../style/_shared.scss';
+
+.logo-page {
+	background-color: $identity;
+	min-height: $default-page-height;
+
+	@include center-children;
+
+	.logo {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		padding-top: $standard-margin * 2;
+		margin-bottom: $standard-margin * 2;
+	}
+
+	.title {
+		color: $white;
+		text-align: center;
+		font-size: $standard-margin;
+		display: block;
+	}
+}

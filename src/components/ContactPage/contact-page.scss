@@ -1,0 +1,21 @@
+@import '../../style/_shared.scss';
+
+.contact-page {
+  text-align: center;
+  background-color: $main-dark;
+  padding: $standard-margin * 2 $standard-margin;
+  color: $white;
+
+  .name, .phone {
+    font-family: Georgia, serif;
+  }
+
+  .lets, .meet {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .lets, .meet {
+
+    margin: (2 * $standard-margin) 0;
+  }
+}
