@@ -1,0 +1,46 @@
+@import '../../style/_shared.scss';
+
+.cv-entry {
+
+  padding: (2*$standard-margin) $standard-margin;
+  border-left: 8px solid;
+  //border-color: $emphasis;
+
+  .tag-heading {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .tags {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, serif;
+
+    li {
+      font-size: 12px;
+      display: inline-block;
+      margin-right: 0.5em;
+      text-transform: capitalize;
+    }
+  }
+  
+  h2 {
+    text-align: left;
+  }
+}
+
+.cv-entry:nth-of-type(5n-7) {
+  border-color: $identity;
+}
+.cv-entry:nth-of-type(5n-6) {
+  border-color: $main-light;
+}
+.cv-entry:nth-of-type(5n-5) {
+  border-color: $main;
+}
+.cv-entry:nth-of-type(5n-4) {
+  border-color: $emphasis;
+}
+.cv-entry:nth-of-type(5n-3) {
+  border-color: $main-dark;
+}

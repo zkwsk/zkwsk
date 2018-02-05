@@ -1,0 +1,15 @@
+@import '../../style/_shared.scss';
+
+.cv-metadata {
+  background-color: $main-dark;
+  padding: $standard-margin;
+
+  color: $white-blend;
+  font-family: Georgia, serif;
+  font-size: 12px;
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+}

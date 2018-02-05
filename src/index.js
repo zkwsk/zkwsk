@@ -5,6 +5,7 @@ import './index.css';
 import Main from './containers/Main';
 import CaseDR from './containers/CaseDR';
 import CaseTigerspring from './containers/CaseTigerspring';
+import Cv from './containers/CV'
 import NoMatch from './components/404/404';
 import registerServiceWorker from './registerServiceWorker';
 
@@ -15,7 +16,7 @@ ReactDOM.render(
         <Route exact path="/" component={Main}/>
         <Route exact path="/cases/dr" component={CaseDR}/>
         <Route exact path="/cases/tigerspring" component={CaseTigerspring}/>
-        <Route exact path="/cv" component={CaseTigerspring}/>
+        <Route exact path="/cv" component={Cv}/>
         <Route component={NoMatch}/>
       </Switch>
     </Router>

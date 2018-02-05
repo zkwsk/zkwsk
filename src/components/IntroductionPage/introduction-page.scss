@@ -1,6 +1,6 @@
 @import '../../style/_shared.scss';
 
-$circle-width: 35vw;
+$circle-width: 25vw;
 
 
 
@@ -9,7 +9,6 @@ $vertical-displacement: 0.70;
 
 .introduction-page {
 	background-color: $main-dark;
-	min-height: $default-page-height;
 	padding: $standard-margin * 2 $standard-margin;
 	color: $white;
 }

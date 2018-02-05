@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import './portfolio-item.css';
-import DateToString from '../DateToString';
 import Gallery from "../Gallery/Gallery";
 
 class PortfolioItem extends Component {
   render() {
 
-    const {period_start, period_end, title, employer, description, portfolio, label, tags, gallery} = this.props.position;
-    const {show, link, icon } = portfolio;
+    const {period_start, period_end, title, employer, portfolio, label, tags, gallery} = this.props.position;
+    const {show, link, icon, description } = portfolio;
 
     if (!show) {
       return null;
