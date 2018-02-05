@@ -17,11 +17,11 @@ class Portfolio extends Component {
         <p className="portfolio-description">
           This is a selection of companies I have done work for, either as an employee, freelancer or as a startup co-founder.
         </p>
-
+        <div className="portfolio-list">
         {positions.map((position, i) => (
           <PortfolioItem position={position} key={i} />
         ))}
-
+        </div>
       </div>
     );
   }

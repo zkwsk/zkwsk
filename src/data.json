@@ -1,29 +1,92 @@
 {
   "cv": {
     "positions": [{
-      "period_start": "2016-01",
-      "period_end": "",
-      "title": "Web Developer",
-      "employer": "Danmarks Radio",
-      "description": "I have written a case about my work at Danmarks Radio.",
-      "label": "case",
-      "portfolio": {
-        "show": true,
-        "background-color": "",
-        "backdrop-color": "#f46197",
-        "link": "https://dr.dk",
-        "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/dr_logo.svg",
-        "display-logo": true
+        "period_start": "2016-01",
+        "period_end": "",
+        "title": "Web Developer",
+        "employer": "Danmarks Radio",
+        "description": "I have written a case about my work at Danmarks Radio.",
+        "label": "case",
+        "portfolio": {
+          "show": true,
+          "background-color": "",
+          "backdrop-color": "#f46197",
+          "link": "https://dr.dk",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/dr_logo.svg",
+          "display-logo": true
+        },
+        "tags": [
+          "react",
+          "symfony",
+          "webpack",
+          "docker",
+          "accessibility",
+          "SEO"
+        ],
+        "case": {
+          "gallery": [{
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/artikel_viden.jpg",
+              "description": "An example of a redesigned article. More layouts will be released soon, however."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/nyhedsoverblikket.jpg",
+              "description": "2018 Redesign of the 'news overview' section found under most artickles."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mere_om.jpg",
+              "description": "2018 Redesign of the 'more like this' section."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/navigation.jpg",
+              "description": "Redesign of navigation. Focus on simple aesthetics, usability and accessibility."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/footer.jpg",
+              "description": "Redesign of navigation. Focus on simple aesthetics, usability and accessibility."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_liste.gif",
+              "description": "A solution I came up with to allow editors to 'build lists' of content across different types."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_1.jpg",
+              "description": "Examples of work I have taken part in on dr.dk/mad"
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_2.jpg",
+              "description": "Examples of work I have taken part in on dr.dk/mad"
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_3.jpg",
+              "description": "Examples of work I have taken part in on dr.dk/mad"
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_4.jpg",
+              "description": "Examples of work I have taken part in on dr.dk/mad"
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_5.jpg",
+              "description": "Examples of work I have taken part in on dr.dk/mad"
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_6.jpg",
+              "description": "Examples of work I have taken part in on dr.dk/mad"
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_7.jpg",
+              "description": "Examples of work I have taken part in on dr.dk/mad"
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mad_8.jpg",
+              "description": "Examples of work I have taken part in on dr.dk/mad"
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/vejr_widget.jpg",
+              "description": "A weather widget I have built. Originally it was presenting local weather based on the users location, but this feature has since been disabled."
+            }
+          ]
+        }
       },
-      "tags": [
-        "react",
-        "symfony",
-        "webpack",
-        "docker",
-        "accessibility",
-        "SEO"
-      ]
-    },
       {
         "period_start": "2017-04",
         "period_end": "",
@@ -46,7 +109,23 @@
           "webpack",
           "teaching",
           "UX Design"
-        ]
+        ],
+        "gallery": [{
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_1.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }, {
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_2.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }, {
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_3.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }, {
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_4.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }, {
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Quinoa_5.png",
+          "description": "A quick mobile app design I did in Sketch as part of the specification for the students graduation project."
+        }]
       },
       {
         "period_start": "2014-10",
@@ -91,7 +170,11 @@
           "Javascript",
           "UX Design",
           "Wireframing"
-        ]
+        ],
+        "gallery": [{
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/airtame_animation.gif",
+          "description": "I built a custom system for managing orders. I designed the UI and built everything in Ruby on Rails."
+        }]
       },
       {
         "period_start": "2013-10",
@@ -114,12 +197,10 @@
           "CSS",
           "UX Design"
         ],
-        "gallery": [
-          {
-            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Fourpio_Wireframe.jpg",
-            "description": "Fourp.io signup page."
-          }
-        ]
+        "gallery": [{
+          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/Fourpio_Wireframe.jpg",
+          "description": "Fourp.io signup page."
+        }]
       },
       {
         "period_start": "2013-09",
@@ -147,6 +228,29 @@
           "Visual design",
           "webpack",
           "docker"
+        ]
+      },
+      {
+        "period_start": "2016-01",
+        "period_end": "",
+        "title": "Front-end Developer & UX Designer",
+        "employer": "Tigerspring Records",
+        "description": "I have written a case about my work for Tigerspring Records.",
+        "label": "case",
+        "portfolio": {
+          "show": true,
+          "background-color": "",
+          "backdrop-color": "#00d6a4",
+          "link": "http://www.tigerspring.net/",
+          "icon": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/tigerspring.png",
+          "display-logo": true
+        },
+        "tags": [
+          "Workcation",
+          "UX Design",
+          "Wireframing",
+          ".NET",
+          "Razor"
         ]
       }
     ]

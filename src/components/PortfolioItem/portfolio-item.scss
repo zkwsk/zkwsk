@@ -4,12 +4,22 @@
   margin-top: $standard-margin;
   background-color: $white;
   min-height: 200px;
+  width: 100%;
+
+  @media only screen and (min-width: $tablet-width) {
+    width: 47%;
+  }
+
+  @media only screen and (min-width: $widescreen-width) {
+    width: 24%;
+  }
+
 
   @include shadow;
 
   &.dark {
     background-color: $black-blend;
-    color: $white-blend;
+    color: $white;
   }
 
   .description {
@@ -76,12 +86,19 @@
   .label {
     background-color: $black-blend;
     color: $white;
-    font-size: 4vw;
     text-transform: uppercase;
     padding: 0 8px 2px 8px;
-
     position: absolute;
     right: 0;
-    bottom: 4vw;
+    top: 0;
+
+    font-size: 4vw;
+
+    @media only screen and (min-width: $tablet-width) {
+      font-size: 2vw;
+    }
+    @media only screen and (min-width: $widescreen-width) {
+      font-size: 1vw;
+    }
   }
 }

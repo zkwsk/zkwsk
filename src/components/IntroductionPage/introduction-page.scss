@@ -1,6 +1,9 @@
 @import '../../style/_shared.scss';
 
 $circle-width: 35vw;
+
+
+
 $horizontal-displacement: 0.40;
 $vertical-displacement: 0.70;
 
@@ -16,6 +19,7 @@ $vertical-displacement: 0.70;
 	z-index: 0;
 	height: 1.7 * $circle-width;
 	@include center-children-top
+	margin: (2*$standard-margin) $standard-margin;
 }
 
 .circle-technology, .circle-design, .circle-business {
@@ -28,27 +32,6 @@ $vertical-displacement: 0.70;
 		font-weight: 100;
 	}
 }
-
-/*.circle-design {
-	position: relative;
-	background-color: $emphasis;
-	z-index: 1;
-}
-.circle-business {
-	position: absolute;
-	z-index: 2;
-	right: 2vw;
-	background-color: fade-out($main-light, 0.1);
-
-}
-.circle-technology {
-	position: absolute;
-	z-index: 3;
-	left: 2vw;
-	background-color: fade-out($main, 0.1);
-}*/
-
-
 
 .circle-design {
 	position: relative;

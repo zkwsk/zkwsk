@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './portfolio-item.css';
 import DateToString from '../DateToString';
-import Gallery from "../gallery/Gallery";
+import Gallery from "../Gallery/Gallery";
 
 class PortfolioItem extends Component {
   render() {
@@ -22,7 +23,7 @@ class PortfolioItem extends Component {
     if (label) {
       modifier = 'dark';
       labelElm = <span className="label">{label}</span>;
-      caseBtn = <a className="case-btn btn" href="#">Show case</a>;
+      caseBtn = <Link to={'/cases/dr'} className="case-btn btn">Show case</Link>;
     }
 
     if (link) {
