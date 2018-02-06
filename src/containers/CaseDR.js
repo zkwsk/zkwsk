@@ -3,6 +3,7 @@ import './case.css';
 import './case-dr.css';
 import Gallery from '../components/Gallery/Gallery';
 import Contact from '../components/ContactPage/ContactPage'
+import NavigationComponent from '../components/NavigationComponent/NavigationComponent'
 import data from '../data';
 
 class CaseDR extends Component {
@@ -66,6 +67,7 @@ class CaseDR extends Component {
             </li>
           </ul>
         </div>
+        <NavigationComponent/>
         <Contact/>
       </main>
     );
