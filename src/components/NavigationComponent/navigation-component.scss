@@ -1,0 +1,13 @@
+@import '../../style/_shared.scss';
+
+.get-back-home {
+  padding: (2 * $standard-margin) $standard-margin;
+  background-color: $identity;
+  text-align: center;
+  color: $white-blend;
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
