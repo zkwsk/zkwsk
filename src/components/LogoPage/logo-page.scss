@@ -2,24 +2,88 @@
 
 .logo-page {
 	background-color: $identity;
-	min-height: $default-page-height;
+	height: 0;
+	padding-bottom: 95%;
 
-	@include center-children;
+	.branding {
 
-	.logo {
-		margin-top: 0;
-		margin-bottom: 0;
-		margin-left: auto;
-		margin-right: auto;
-		display: block;
-		padding-top: $standard-margin * 2;
-		margin-bottom: $standard-margin * 2;
+		user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		-moz-user-select: none;
+
+		position: relative;
+		width: 85%;
+		margin: 0 auto;
+
+		padding-top: 5%;
+		padding-bottom: 5%;
+
+		video, svg {
+			position: absolute;
+		}
+	}
+	video {
+		width: 100%;
+	}
+	svg {
+		text {
+			font-family: Georgia, serif;
+			font-size: 10px;
+		}
+
+		.logo {
+			fill: black;
+		}
+		.logoFill {
+			fill: black;
+			opacity: 0;
+			transition: opacity 2s;
+		}
+
+		.cover {
+			fill: rgba(255, 255, 255, 1);
+			transition: fill 2s;
+		}
+
+		.subtitle {
+			opacity: 0.8;
+			transition: opacity 1s;
+		}
+
+		&:hover, &.hover {
+			.cover {
+				fill: rgba(255, 255, 255, 0.2);
+
+			}
+			.logoFill {
+				opacity: 0.5;
+			}
+			.subtitle {
+				opacity: 0;
+			}
+		}
 	}
 
-	.title {
-		color: $white;
-		text-align: center;
-		font-size: $standard-margin;
-		display: block;
+	@media screen and (min-width: $tablet-width) {
+
+		padding-bottom: 80%;
+
+		.branding {
+			padding-top: 10%;
+			padding-bottom: 10%;
+			width: 60%;
+		}
+	}
+
+	@media screen and (min-width: $widescreen-width) {
+
+		padding-bottom: 60%;
+
+		.branding {
+			padding-top: 10%;
+			padding-bottom: 10%;
+			width: 40%;
+		}
 	}
 }
