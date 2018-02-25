@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import CvHeader from '../components/CvHeader/CvHeader';
 import CvMetaData from '../components/CvMetaData/CvMetaData';
 import Contact from '../components/ContactPage/ContactPage';

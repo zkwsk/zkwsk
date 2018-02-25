@@ -1,11 +1,11 @@
-@import '../../style/_shared.scss';
+@import '../../style/module-imports.scss';
 
 .cv-education {
   ul {
     list-style-type: none;
     padding: 0;
   }
-  
+
   > h2, > p {
 
     margin: (2 * $standard-margin) $standard-margin;

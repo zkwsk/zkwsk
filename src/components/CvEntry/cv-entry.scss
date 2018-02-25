@@ -1,4 +1,4 @@
-@import '../../style/_shared.scss';
+@import '../../style/module-imports.scss';
 
 .cv-entry {
 
@@ -23,7 +23,7 @@
       text-transform: capitalize;
     }
   }
-  
+
   h2 {
     text-align: left;
   }

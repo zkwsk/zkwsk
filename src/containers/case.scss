@@ -1,4 +1,4 @@
-@import '../style/_shared.scss';
+@import '../style/module-imports.scss';
 
 .case-header {
   width: 100%;
@@ -38,7 +38,7 @@
   h2 {
     text-align: left;
   }
-  
+
   ul {
     list-style-type: none;
     padding: 0;

@@ -1,9 +1,5 @@
-// Add imports to any shared files here.
-@import "colors.scss";
-@import "fonts.scss";
-@import "mixins.scss";
-@import "variables.scss";
-
+/* global.css */
+@import 'module-imports.scss';
 
 body {
   margin: 0;

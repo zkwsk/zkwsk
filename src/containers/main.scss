@@ -1,11 +1,11 @@
-@import '../style/_shared.scss';
+@import '../style/module-imports.scss';
 
 .go-to-cv {
 
   padding: $standard-margin;
 
   text-align: center;
-  
+
   background-color: $identity;
   color: $white;
 
