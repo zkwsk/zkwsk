@@ -8,6 +8,7 @@ import CaseTigerspring from './containers/CaseTigerspring';
 import Cv from './containers/CV'
 import NoMatch from './components/404/404';
 import registerServiceWorker from './registerServiceWorker';
+import 'sanitize.css';
 
 ReactDOM.render(
   (
