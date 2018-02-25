@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './gallery.css';
 import baguetteBox from 'baguettebox.js';
+import GalleryItem from './GalleryItem';
+
+const elementsPerRow = 3;
 
 class Gallery extends Component {
   componentDidMount() {
@@ -8,28 +11,29 @@ class Gallery extends Component {
     baguetteBox.run('.gallery');
   }
 
+  // Layout logic. One item: full-width, two-items: 1/2 grid, < 3 items: 1/3 grid
+  getLayout(length) {
+
+    if (length < 1) {
+      return false;
+    }
+
+    if (length <= elementsPerRow) {
+      return length;
+    } else {
+      return elementsPerRow;
+    }
+  }
+
   render() {
     const { gallery } = this.props;
 
-    let layout = 1;
-
-    if (gallery.length === 2) {
-      layout = 2
-    }
-    if (gallery.length <= 3) {
-      layout = 3;
-    }
-
     return (
       <div className="gallery">
-        <h3 className="gallery-heading">Screenshots:</h3>
+        <h3 className="gallery__heading">Screenshots:</h3>
         <ul>
           {gallery.map((picture, i) => (
-            <li key={i} className={"layout-" + layout}>
-              <a href={picture.link} data-caption={picture.description}>
-                <img src={picture.link} alt={picture.description}/>
-              </a>
-            </li>
+            <GalleryItem key={i} picture={picture} layout={this.getLayout(gallery.length)}/>
           ))}
         </ul>
       </div>

@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 // Horizontally and vertically center children using flexbox.
 @mixin center-children {
   display: flex;
@@ -32,4 +34,118 @@
   -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+// Apply this to an outer container and the children will have the given margin applied and stay aligned.
+@mixin magic-margin($margin) {
+
+  $half: $margin / 2;
+
+  margin-left: - ($half);
+  margin-right: - ($half);
+
+  > * {
+    margin-left: $half;
+    margin-right: $half;
+  }
+}
+
+// This will work out the width factoring in gutters.
+@function get-grid-width($division, $gutter: 0) {
+
+  // There are always one gutter less than divisions.
+  $gutter-count: $division - 1;
+
+  // All the gutters combined in a row needs to be adjusted for the last element not contributing
+  $gutter-sum: $gutter * $gutter-count;
+
+  // Since the gutter is applied in fractions to each element it has to be divided with the number of elements
+  $calculated-gutter: $gutter-sum / $division;
+
+  @return calc(100% / #{$division} - #{$calculated-gutter})
+}
+
+@function get-percent-height($division, $aspect-ratio: 1, $gutter: 0) {
+  $width: get-grid-width($division, $gutter);
+  @return calc(#{$width} * #{$aspect-ratio});
+}
+
+@mixin magic-grid($margin: $standard-margin) {
+  padding: 0;
+  margin: 0;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  // Mobile layout
+  > [class*="--layout"] {
+    display: block;
+    width: 100%;
+  }
+  // On tablet stick to either 1- or 2-column grids
+  @media screen and (min-width: $tablet-width) {
+    > [class*="--layout-1"],
+    > [class*="--layout-2"],
+    > [class*="--layout-3"],
+    > [class*="--layout-4"],
+    > [class*="--layout-5"],
+    > [class*="--layout-6"]
+    {
+      width: get-grid-width(2, $standard-margin);
+    }
+  }
+  // Desktop layout
+  @media screen and (min-width: $widescreen-width) {
+    > [class*="--layout-3"] {
+      width: get-grid-width(3, $standard-margin);
+    }
+    > [class*="--layout-4"] {
+      width: get-grid-width(4, $standard-margin);
+    }
+    > [class*="--layout-5"] {
+      width: get-grid-width(5, $standard-margin);
+    }
+    > [class*="--layout-6"] {
+      width: get-grid-width(6, $standard-margin);
+    }
+  }
+}
+
+@mixin intrinsic-ratio-grid($margin: $standard-margin)  {
+
+  // Note that we don't set intrinsic ratio on mobile
+
+  // Tablet
+  @media screen and (min-width: $tablet-width) {
+    > [class*="--layout-1"],
+    > [class*="--layout-2"],
+    > [class*="--layout-3"],
+    > [class*="--layout-4"],
+    > [class*="--layout-5"],
+    > [class*="--layout-6"] {
+      width: get-grid-width(2, $standard-margin);
+    }
+
+    // Desktop
+    @media screen and (min-width: $widescreen-width) {
+      > [class*="--layout-3"] {
+        width: get-grid-width(3, $standard-margin);
+      }
+      > [class*="--layout-4"] {
+        width: get-grid-width(4, $standard-margin);
+      }
+      > [class*="--layout-5"] {
+        width: get-grid-width(5, $standard-margin);
+      }
+      > [class*="--layout-6"] {
+        width: get-grid-width(6, $standard-margin);
+      }
+    }
+  }
 }
