@@ -6,7 +6,7 @@ import Gallery from "../Gallery/Gallery";
 class PortfolioItem extends Component {
   render() {
 
-    const {period_start, period_end, title, employer, portfolio, label, tags, gallery} = this.props.position;
+    const {employer, portfolio, label, tags, gallery} = this.props.position;
     const {show, link, icon, description } = portfolio;
 
     if (!show) {
@@ -14,7 +14,7 @@ class PortfolioItem extends Component {
     }
 
     // Conditionally rendered elements
-    let img, header, modifier, labelElm, linkElm, caseBtn, galleryElm = '';
+    let img, modifier, labelElm, linkElm, caseBtn, galleryElm = '';
 
     const bgColor = portfolio['background-color'];
     const dropColor = portfolio['backdrop-color'];

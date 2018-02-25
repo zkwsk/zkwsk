@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import 'sanitize.css';
+import './style/fonts.css'
+import './style/global.css'
 import './index.css';
 import Main from './containers/Main';
 import CaseDR from './containers/CaseDR';
@@ -8,6 +11,7 @@ import CaseTigerspring from './containers/CaseTigerspring';
 import Cv from './containers/CV'
 import NoMatch from './components/404/404';
 import registerServiceWorker from './registerServiceWorker';
+
 
 ReactDOM.render(
   (

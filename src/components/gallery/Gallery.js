@@ -15,20 +15,17 @@ class Gallery extends Component {
 
     if (gallery.length === 2) {
       layout = 2
-    } {
-      if (gallery.length <= 3) {
-        layout = 3;
-      }
     }
-
-    console.log(gallery.length);
+    if (gallery.length <= 3) {
+      layout = 3;
+    }
 
     return (
       <div className="gallery">
         <h3 className="gallery-heading">Screenshots:</h3>
         <ul>
           {gallery.map((picture, i) => (
-            <li key={i} class={"layout-" + layout}>
+            <li key={i} className={"layout-" + layout}>
               <a href={picture.link} data-caption={picture.description}>
                 <img src={picture.link} alt={picture.description}/>
               </a>
@@ -41,3 +38,4 @@ class Gallery extends Component {
 }
 
 export default Gallery;
+

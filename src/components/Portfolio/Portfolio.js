@@ -8,9 +8,6 @@ class Portfolio extends Component {
 
     const positions = data["cv"]["positions"];
 
-    console.log(positions);
-
-
     return (
       <div className="portfolio-page">
         <h2>People I have worked with</h2>
