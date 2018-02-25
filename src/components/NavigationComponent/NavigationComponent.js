@@ -7,7 +7,7 @@ class NavigationComponent extends Component {
     return (
       <div className="get-back-home">
         <p>Get back to my main portfolio page.</p>
-        <Link class="btn btn-home" to={'/'}>Go to portfolio</Link>
+        <Link className="btn btn-home" to={'/'}>Go to portfolio</Link>
         <hr/>
         <p>Find me on social media.</p>
         <a className="btn btn-github" href="https://github.com/zkwsk/">Github</a>
