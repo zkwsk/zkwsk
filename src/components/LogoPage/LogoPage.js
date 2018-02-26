@@ -14,6 +14,7 @@ class LogoPage extends Component {
             playsInline
             muted
             aria-hidden="true"
+            poster="https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/video_still.jpg"
             src="https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/resume_video.mp4"
           />
 
