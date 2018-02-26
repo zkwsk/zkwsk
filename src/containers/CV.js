@@ -10,6 +10,11 @@ import data from '../data';
 import './cv.css';
 
 class CV extends Component {
+
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
+
   render() {
 
     const positions = data.cv.positions;

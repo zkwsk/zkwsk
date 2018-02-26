@@ -7,6 +7,11 @@ import NavigationComponent from '../components/NavigationComponent/NavigationCom
 import data from '../data';
 
 class CaseDR extends Component {
+
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <main role="main">
