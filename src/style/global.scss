@@ -15,22 +15,6 @@ p {
   max-width: 650px;
 }
 
-.btn {
-  display: inline-block;
-  text-align: center;
-  padding: ($standard-margin/2) $standard-margin;
-  background-color: $emphasis;
-  border: none;
-  color: $white;
-  text-decoration: none;
-  margin: 0 ($standard-margin/2) $standard-margin ($standard-margin/2);
-
-  &:hover {
-    background-color: darken($emphasis, 5%);
-    color: $main;
-  }
-}
-
 hr {
   border-style: none;
   border-bottom: 1px solid fade-out($white, 0.7);

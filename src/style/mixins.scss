@@ -149,3 +149,19 @@
     }
   }
 }
+
+@mixin btn($color: $white, $hoverColor: $main, $background: $emphasis) {
+  display: inline-block;
+  text-align: center;
+  padding: ($standard-margin/2) $standard-margin;
+  background-color: $background;
+  border: none;
+  color: $color;
+  text-decoration: none;
+  margin: 0 ($standard-margin/2) $standard-margin ($standard-margin/2);
+
+  &:hover {
+    background-color: darken($background, 5%);
+    color: $hoverColor;
+  }
+}

@@ -10,4 +10,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  &__btn {
+    @include btn;
+  }
+  &__btn--light {
+    @include btn($white-blend, $white, $main-light);
+  }
 }
