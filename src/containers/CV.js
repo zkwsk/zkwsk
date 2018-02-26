@@ -34,11 +34,10 @@ class CV extends Component {
         </ul>
         <CvEducation/>
         <h2>Hobbies and interests</h2>
-        <p>I have a great passion for not only listening to, but also playing, writing and producing music. The result
-        of which can be seen and heard on my <a href="https://www.instagram.com/funkylaundry">Instagram profile</a>.</p>
-        <p>I no longer have ambitions of turning music into more than a hobby, but I can mention numerous ways in which
-          music has also affected my professional career. The most profound is the fact that without practicing piano
-          many hours a day as a teenager, I would most likely never have had the persistence and patience to learn
+        <p>I have a great passion for music. I listen, playing, write and produce music and I collect instruments. The result
+        can be seen and heard on my <a href="https://www.instagram.com/funkylaundry">Instagram profile</a>.</p>
+        <p>I can mention numerous ways in which music has also affected my professional career, but the most profound is
+          that I believe that the late hours practicing piano as teenager is what taught me the persistence to learn
           computer programming.</p>
         <NavigationComponent/>
         <Contact/>
