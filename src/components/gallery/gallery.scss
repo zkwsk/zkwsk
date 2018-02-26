@@ -1,37 +1,66 @@
 @import '../../style/module-imports.scss';
 @import '../../../node_modules/baguettebox.js/dist/baguetteBox.min.css';
 
+// This is the ratio between width:height.
+// Ex. If you want the height to be 50% of the width, set this to 0.5
+$aspect-ratio: 0.8;
+
 .gallery {
+
   ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    flex-flow: row wrap;
-    justify-content: space-around;
+    @include magic-grid();
+    text-align: center;
   }
 
-  li {
-    display: block;
+  &__heading {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
 
-    &.layout-1 {
+  &__item {
+    &.layout-1, &.layout-2, &.layout-3 {
       width: 100%;
+      margin-top: $standard-margin;
+
+      @media screen and (max-width: ($tablet-width - 1)){
+        a {
+          // Kind of hacky way to disable the gallery function for 1-column layouts (is essentially already a gallery)
+          // @todo Would be better to remove links from the DOM via javascript.
+          pointer-events: none; /* Disables the button completely. Better than just cursor: default; */
+        }
+      }
     }
-    &.layout-1 {
-      width: 50%;
+
+    @media screen and (min-width: $tablet-width){
+      // On tablet screens both layout 2 and 3 will render as layout 2.
+      &.layout-2, &.layout-3 {
+        overflow: hidden;
+
+        // From 2-column layouts and upwards we set intrinsic ratios
+        height: 0;
+        padding-bottom: get-percent-height(2, $aspect-ratio, $standard-margin);
+
+
+        :hover {
+          transform: scale(1.02);
+          transition: transform 0.05s;
+        }
+      }
     }
-    &.layout-1 {
-      width: 33%;
+
+    @media screen and (min-width: $widescreen-width){
+      &.layout-3 {
+        padding-bottom: get-percent-height(3, $aspect-ratio, $standard-margin);
+      }
     }
   }
-}
-.gallery-heading {
-  text-transform: uppercase;
-  font-size: 12px;
+
+  &-container--hidden {
+    display: none;
+  }
+
+  &__button {
+    @include btn($white, $white, $main-light);
+    margin-left: 0;
+  }
 }

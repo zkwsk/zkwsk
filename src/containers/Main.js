@@ -15,11 +15,11 @@ class Main extends Component {
         <Portfolio/>
         <div className="go-to-cv">
           <p>If you are interested in more details you can investigate my full CV below.</p>
-          <Link className="btn btn-cv" to={'/cv'}>View CV</Link>
+          <Link className="go-to-cv__btn" to={'/cv'}>View CV</Link>
           <hr/>
           <p>Or find me on social media.</p>
-          <a className="btn btn-github" href="https://github.com/zkwsk/">Github</a>
-          <a className="btn btn-linkedin" href="https://www.linkedin.com/in/zakiwasik/">Linkedin</a>
+          <a className="go-to-cv__btn--light" href="https://github.com/zkwsk/">Github</a>
+          <a className="go-to-cv__btn--light" href="https://www.linkedin.com/in/zakiwasik/">Linkedin</a>
         </div>
         <ContactPage/>
       </main>

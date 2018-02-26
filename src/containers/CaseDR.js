@@ -7,6 +7,11 @@ import NavigationComponent from '../components/NavigationComponent/NavigationCom
 import data from '../data';
 
 class CaseDR extends Component {
+
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <main role="main">
@@ -48,14 +53,14 @@ class CaseDR extends Component {
                 through google-search, SEO was emphasized.</p>
               <p>We managed to achieve very good results and now the most popular recipes are consistently on the first
               page on Google, which was a rare sight before the rebuild and redesign og the site.</p>
-              <p>We did have UX design for the user-facing pages, but as no UX-resources were assigned for the administrative 
+              <p>We did have UX design for the user-facing pages, but as no UX-resources were assigned for the administrative
               interface, another front-end developer and I set out to design the interface.</p>
-              <p>The result turned out quite succesful and some concepts are currently being carried over into other 
+              <p>The result turned out quite succesful and some concepts are currently being carried over into other
               administrative interfaces at DR.</p>
             </li>
             <li>
               <h3>DR.DK på Drupal</h3>
-              <p>My career in Danmarks Radio startet as an external consultant on behalf of Minds. My first project was
+              <p>My career in Danmarks Radio startet as an external consultant on behalf of <a href="www.it-minds.dk">IT Minds</a>. My first project was
                 to work on migrating DR.DK from an old proprietary CMS to Drupal.</p>
               <p>At that moment there was about 30 people working on the projects. Most of whom where external consultants
                 from specialized Drupal agencies. That gave me the opportunity to work alongside and learn from some of

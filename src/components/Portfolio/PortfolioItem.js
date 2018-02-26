@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './portfolio-item.css';
 import Gallery from "../Gallery/Gallery";
 
 class PortfolioItem extends Component {
+
+  spinalCase(str) {
+    return str.replace(/(?!^)([A-Z])/g, ' $1')
+      .replace(/[_\s]+(?=[a-zA-Z])/g, '-').toLowerCase();
+  }
+
   render() {
 
     const {employer, portfolio, label, tags, gallery} = this.props.position;
     const {show, link, icon, description } = portfolio;
+
+    const portfolioCase = this.props.position.case;
 
     if (!show) {
       return null;
@@ -22,39 +29,42 @@ class PortfolioItem extends Component {
     if (label) {
       modifier = 'dark';
       labelElm = <span className="label">{label}</span>;
-      caseBtn = <Link to={'/cases/dr'} className="case-btn btn">Show case</Link>;
+      caseBtn = <Link to={portfolioCase.path} className="portfolio-item__case-btn">Show case</Link>;
+    } else {
+      if (gallery) {
+        galleryElm = <Gallery gallery={gallery} hidden={true} id={`gallery-${this.spinalCase(employer)}`}/>
+      }
     }
 
     if (link) {
       linkElm = <div className="employer-link"><a href={link}>Visit {employer}'s website</a></div>
     }
 
-    if (gallery) {
-      galleryElm = <Gallery gallery={gallery}/>
-    }
-
 
     return (
-      <div className={"portfolio-item " + modifier}>
+      <div className={`portfolio-item${modifier ? '--' + modifier : ''} layout-3`}>
         <div className="center-wrapper">
           <div className="portfolio-header" style={{backgroundColor: dropColor}}>
             {labelElm}
             <img src={icon} alt="logo" style={{backgroundColor: bgColor}}/>
           </div>
         </div>
-        <div className="description">
-          <h2 className="employer">{employer}</h2>
+        <div className="portfolio-item__description">
+          <h2 className="portfolio-item__employer">{employer}</h2>
           <p>{description}</p>
           {caseBtn}
-          {linkElm}
-          <h4 className="tag-heading">Tags:</h4>
-          <ul className="tags">
-            {tags.map((tag, i) => (
-              <li key={i}>{tag}</li>
-            ))}
-          </ul>
           {galleryElm}
+          {linkElm}
+          <div className="portfolio-item__tag-container">
+            <h4 className="portfolio-item__tag-heading">Tags:</h4>
+            <ul className="portfolio-item__tag-list">
+              {tags.map((tag, i) => (
+                <li className="portfolio-item__tag-list-item" key={i}>{tag}</li>
+              ))}
+            </ul>
+          </div>
         </div>
+
       </div>
     );
   }

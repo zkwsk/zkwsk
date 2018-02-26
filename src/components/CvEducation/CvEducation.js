@@ -10,8 +10,6 @@ class CvEducation extends Component {
 
     const educations = data.cv.education;
 
-    console.log(educations);
-
     return (
       <div className="cv-education">
         <h2>Education</h2>

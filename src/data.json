@@ -25,10 +25,12 @@
         "SEO"
       ],
       "case": {
-        "gallery": [{
-          "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/artikel_viden.jpg",
-          "description": "An example of a redesigned article. More layouts will be released soon, however."
-        },
+        "path": "/cases/dr",
+        "gallery": [
+          {
+            "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/artikel_viden.jpg",
+            "description": "An example of a redesigned article. More layouts will be released soon, however."
+          },
           {
             "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/nyhedsoverblikket.jpg",
             "description": "2018 Redesign of the 'news overview' section found under most artickles."
@@ -137,7 +139,7 @@
         "description": "My main client as a consultant for IT Minds was Danmarks Radio (DR), for whom I was helping out migrating DR.DK to Drupal. My work for DR was cherished and eventually led to permanent employment.",
         "label": "",
         "portfolio": {
-          "show": false,
+          "show": true,
           "description": "My main client as a consultant for IT Minds was Danmarks Radio (DR), for whom I was helping out migrating DR.DK to Drupal. My work for DR was cherished and eventually led to permanent employment.",
           "background-color": "white",
           "backdrop-color": "#0a2342",
@@ -244,7 +246,7 @@
         "description": "In 2013 I traveled with Tigerspring on a 'workcation' adventure to Mauritius, where we combined building a software-startup with a tropical vacation. During the weekdays we coded from early morning till late evening and during weekends we went sight-seeing on the Island. The product was a game'ified platform with the purpose of crowdsourcing the tasks of an A&R manager. Every week Tigerspring would release exclusive content from future signings and users would have to guess which artists would be succesful. The product, which was called Wingzon, was not officially launched until 2016 and unfortunately it failed to gain the necessary traction in the market.",
         "label": "case",
         "portfolio": {
-          "show": false,
+          "show": true,
           "description": "I have written a case about my work for Tigerspring Records.",
           "background-color": "",
           "backdrop-color": "#00d6a4",
@@ -258,7 +260,36 @@
           "Wireframing",
           ".NET",
           "Razor"
-        ]
+        ],
+        "case": {
+          "path": "/cases/tigerspring",
+          "gallery": [
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/wingzon_final_landingpage.jpeg",
+              "description": "A screenshot of the landingpage when the site finally launched."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/wingzon_final_songs.jpeg",
+              "description": "Listing songs on the final site."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/wingzon_final_charts.jpeg",
+              "description": "How charts worked out on the final site."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/wingzon_songs.jpg",
+              "description": "A prototype of song listings I developed along the way."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/wingzon_rating.jpg",
+              "description": "A prototype for rating that did not make it into the final product."
+            },
+            {
+              "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/tigerspring_prototype.jpg",
+              "description": "A prototype I designed (photoshop-based sketch) as a trial before joining the project"
+            }
+          ]
+        }
       },
       {
         "period_start": "2011-08",
