@@ -1,4 +1,5 @@
 @import 'variables.scss';
+@import 'colors.scss';
 
 // Horizontally and vertically center children using flexbox.
 @mixin center-children {
@@ -84,34 +85,34 @@
   justify-content: space-between;
 
   // Mobile layout
-  > [class*="--layout"] {
+  > [class*="layout-"] {
     display: block;
     width: 100%;
   }
   // On tablet stick to either 1- or 2-column grids
   @media screen and (min-width: $tablet-width) {
-    > [class*="--layout-1"],
-    > [class*="--layout-2"],
-    > [class*="--layout-3"],
-    > [class*="--layout-4"],
-    > [class*="--layout-5"],
-    > [class*="--layout-6"]
+    > .layout-1,
+    > .layout-2,
+    > .layout-3,
+    > .layout-4,
+    > .layout-5,
+    > .layout-6
     {
       width: get-grid-width(2, $standard-margin);
     }
   }
   // Desktop layout
   @media screen and (min-width: $widescreen-width) {
-    > [class*="--layout-3"] {
+    > .layout-3 {
       width: get-grid-width(3, $standard-margin);
     }
-    > [class*="--layout-4"] {
+    > .layout-4 {
       width: get-grid-width(4, $standard-margin);
     }
-    > [class*="--layout-5"] {
+    > .layout-5 {
       width: get-grid-width(5, $standard-margin);
     }
-    > [class*="--layout-6"] {
+    > .layout-6 {
       width: get-grid-width(6, $standard-margin);
     }
   }
@@ -123,27 +124,27 @@
 
   // Tablet
   @media screen and (min-width: $tablet-width) {
-    > [class*="--layout-1"],
-    > [class*="--layout-2"],
-    > [class*="--layout-3"],
-    > [class*="--layout-4"],
-    > [class*="--layout-5"],
-    > [class*="--layout-6"] {
+    > .layout-1,
+    > .layout-2,
+    > .layout-3,
+    > .layout-4,
+    > .layout-5,
+    > .layout-6 {
       width: get-grid-width(2, $standard-margin);
     }
 
     // Desktop
     @media screen and (min-width: $widescreen-width) {
-      > [class*="--layout-3"] {
+      > .layout-3 {
         width: get-grid-width(3, $standard-margin);
       }
-      > [class*="--layout-4"] {
+      > .layout-4 {
         width: get-grid-width(4, $standard-margin);
       }
-      > [class*="--layout-5"] {
+      > .layout-5 {
         width: get-grid-width(5, $standard-margin);
       }
-      > [class*="--layout-6"] {
+      > .layout-6 {
         width: get-grid-width(6, $standard-margin);
       }
     }

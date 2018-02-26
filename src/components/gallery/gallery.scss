@@ -18,7 +18,7 @@ $aspect-ratio: 0.8;
   }
 
   &__item {
-    &--layout-1, &--layout-2, &--layout-3 {
+    &.layout-1, &.layout-2, &.layout-3 {
       width: 100%;
       margin-top: $standard-margin;
 
@@ -33,7 +33,7 @@ $aspect-ratio: 0.8;
 
     @media screen and (min-width: $tablet-width){
       // On tablet screens both layout 2 and 3 will render as layout 2.
-      &--layout-2, &--layout-3 {
+      &.layout-2, &.layout-3 {
         overflow: hidden;
 
         // From 2-column layouts and upwards we set intrinsic ratios
@@ -49,7 +49,7 @@ $aspect-ratio: 0.8;
     }
 
     @media screen and (min-width: $widescreen-width){
-      &--layout-3 {
+      &.layout-3 {
         padding-bottom: get-percent-height(3, $aspect-ratio, $standard-margin);
       }
     }

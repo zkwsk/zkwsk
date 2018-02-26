@@ -21,7 +21,7 @@ class PortfolioItem extends Component {
     if (label) {
       modifier = 'dark';
       labelElm = <span className="label">{label}</span>;
-      caseBtn = <Link to={'/cases/dr'} className="case-btn btn">Show case</Link>;
+      caseBtn = <Link to={'/cases/dr'} className="portfolio-item__case-btn">Show case</Link>;
     }
 
     if (link) {
@@ -34,24 +34,26 @@ class PortfolioItem extends Component {
 
 
     return (
-      <div className={"portfolio-item " + modifier}>
+      <div className={`portfolio-item${modifier ? '--' + modifier : ''} layout-3`}>
         <div className="center-wrapper">
           <div className="portfolio-header" style={{backgroundColor: dropColor}}>
             {labelElm}
             <img src={icon} alt="logo" style={{backgroundColor: bgColor}}/>
           </div>
         </div>
-        <div className="description">
-          <h2 className="employer">{employer}</h2>
+        <div className="portfolio-item__description">
+          <h2 className="portfolio-item__employer">{employer}</h2>
           <p>{description}</p>
           {caseBtn}
           {linkElm}
-          <h4 className="tag-heading">Tags:</h4>
-          <ul className="tags">
-            {tags.map((tag, i) => (
-              <li key={i}>{tag}</li>
-            ))}
-          </ul>
+          <div className="portfolio-item__tag-container">
+            <h4 className="portfolio-item__tag-heading">Tags:</h4>
+            <ul className="portfolio-item__tag-list">
+              {tags.map((tag, i) => (
+                <li className="portfolio-item__tag-list-item" key={i}>{tag}</li>
+              ))}
+            </ul>
+          </div>
           {galleryElm}
         </div>
       </div>

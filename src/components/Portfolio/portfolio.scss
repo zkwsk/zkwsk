@@ -1,9 +1,29 @@
 @import '../../style/module-imports.scss';
 
 .portfolio-page {
+
+  h2 {
+    text-align: left;
+  }
+
   background-color: $grey;
   min-height: $default-page-height;
-  padding: 2*$standard-margin $standard-margin;
+  padding: (2 * $standard-margin) $standard-margin;
+
+  .gallery {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-width) {
+  .portfolio-page h2 {
+      text-align: center;
+    }
+  .portfolio-description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .portfolio-list {
@@ -16,71 +36,92 @@
 
   flex-flow: row wrap;
   justify-content: space-around;
+
+  @include magic-grid;
 }
 
 .portfolio-item {
-  margin-top: $standard-margin;
-  background-color: $white;
-  min-height: 200px;
-  width: 100%;
 
-  @media only screen and (min-width: $tablet-width) {
-    width: 47%;
+  &, &--dark {
+    margin-top: $standard-margin;
+    background-color: $white;
+    min-height: 200px;
+    //width: 100%;
+    position: relative;
+
+    @include shadow;
+
+
+/*
+    @media only screen and (min-width: $tablet-width) {
+      width: 47%;
+    }
+
+    @media only screen and (min-width: $widescreen-width) {
+      width: 24%;
+    }*/
   }
 
-  @media only screen and (min-width: $widescreen-width) {
-    width: 24%;
-  }
-
-
-  @include shadow;
-
-  &.dark {
+  &--dark {
     background-color: $black-blend;
     color: $white;
   }
 
-  .description {
-    padding: $standard-margin;
-  }
-
-  .job-title {
+  &__job-title {
     text-align: left;
     font-family: Georgia;
     font-size: 16px;
   }
-  .employer {
+  &__employer {
     text-align: left;
     margin: 10px 0 20px;
   }
-  .employment-duration {
+  &__employment-duration {
     font-family: Georgia, serif;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
   }
-  .tag-heading {
+
+  &__case-btn {
+    @include btn;
+    margin: 0;
+    margin-bottom: $standard-margin;
+  }
+
+  &__description {
+    padding: $standard-margin;
+    margin-bottom: 80px;
+  }
+
+  &__tag-container {
+    position: absolute;
+    bottom: $standard-margin;
+  }
+
+  &__tag-heading {
     text-transform: uppercase;
     font-size: 12px;
     margin-bottom: 0;
   }
-  .tags {
+
+  &__tag-list {
     padding: 0;
     margin: 0;
+  }
 
-    li {
-      font-size: 12px;
-      display: inline-block;
-      margin-right: 0.5em;
-      text-transform: capitalize;
-    }
+  &__tag-list-item {
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 0.5em;
+    text-transform: capitalize;
   }
 }
 
 .portfolio-header {
-  // Intrinsic ratio of 16:9
   width: 100%;
   height: 0;
+  // Intrinsic ratio of 16:9
   padding-bottom: 56.25%;
 
   background-color: $emphasis;

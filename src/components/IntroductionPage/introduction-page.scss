@@ -9,16 +9,35 @@ $vertical-displacement: 0.70;
 
 .introduction-page {
 	background-color: $main-dark;
-	padding: $standard-margin * 2 $standard-margin;
+	padding: ($standard-margin * 2) $standard-margin;
 	color: $white;
+
+	h2 {
+		text-align: left;
+	}
+}
+
+p.introduction {
+	text-align: left;
+}
+
+@media screen and (min-width: $tablet-width){
+	.introduction-page h2 {
+		text-align: center;
+	}
+	p.introduction {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 .venn-diagram {
 	position: relative;
 	z-index: 0;
 	height: 1.7 * $circle-width;
-	@include center-children-top
-	margin: (2*$standard-margin) $standard-margin;
+	@include center-children-top;
+	margin: (2 * $standard-margin) $standard-margin;
 }
 
 .circle-technology, .circle-design, .circle-business {
@@ -52,6 +71,4 @@ $vertical-displacement: 0.70;
 	background-color: fade-out($main, 0.1);
 }
 
-p.introduction {
-	padding: 0 $standard-margin * 2;
-}
+
