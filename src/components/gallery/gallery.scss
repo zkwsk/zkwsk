@@ -3,12 +3,13 @@
 
 // This is the ratio between width:height.
 // Ex. If you want the height to be 50% of the width, set this to 0.5
-$aspect-ratio: 1;
+$aspect-ratio: 0.8;
 
 .gallery {
 
   ul {
     @include magic-grid();
+    text-align: center;
   }
 
   &__heading {
