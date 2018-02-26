@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './portfolio-item.css';
+import '../PortfolioItem/portfolio-item.css';
 import Gallery from "../Gallery/Gallery";
 
 class PortfolioItem extends Component {

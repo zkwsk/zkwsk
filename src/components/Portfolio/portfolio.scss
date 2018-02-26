@@ -17,3 +17,106 @@
   flex-flow: row wrap;
   justify-content: space-around;
 }
+
+.portfolio-item {
+  margin-top: $standard-margin;
+  background-color: $white;
+  min-height: 200px;
+  width: 100%;
+
+  @media only screen and (min-width: $tablet-width) {
+    width: 47%;
+  }
+
+  @media only screen and (min-width: $widescreen-width) {
+    width: 24%;
+  }
+
+
+  @include shadow;
+
+  &.dark {
+    background-color: $black-blend;
+    color: $white;
+  }
+
+  .description {
+    padding: $standard-margin;
+  }
+
+  .job-title {
+    text-align: left;
+    font-family: Georgia;
+    font-size: 16px;
+  }
+  .employer {
+    text-align: left;
+    margin: 10px 0 20px;
+  }
+  .employment-duration {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  .tag-heading {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .tags {
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-size: 12px;
+      display: inline-block;
+      margin-right: 0.5em;
+      text-transform: capitalize;
+    }
+  }
+}
+
+.portfolio-header {
+  // Intrinsic ratio of 16:9
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  background-color: $emphasis;
+  background-image: url('https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/angle_overlay_3.svg');
+  background-size: cover;
+
+  position: relative;
+
+  img {
+    padding: 5px;
+    width: 60%;
+    max-height: 55%;
+    position: absolute;
+
+    // @todo: Figure out how to do flexbox centering within intrinsic ratio.
+    top: 30%;
+    left: 50%;
+    margin-left: -30%;
+  }
+
+  .label {
+    background-color: $black-blend;
+    color: $white;
+    text-transform: uppercase;
+    padding: 0 8px 2px 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    font-size: 4vw;
+
+    @media only screen and (min-width: $tablet-width) {
+      font-size: 2vw;
+    }
+    @media only screen and (min-width: $widescreen-width) {
+      font-size: 1vw;
+    }
+  }
+}
