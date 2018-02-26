@@ -13,7 +13,7 @@
     @include btn;
   }
   &__btn--light {
-    @include btn($white-blend, $white, $main-light);
+    @include btn($white, $white, $main-light);
   }
 
   p {

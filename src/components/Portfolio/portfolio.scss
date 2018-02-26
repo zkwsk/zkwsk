@@ -9,10 +9,6 @@
   background-color: $grey;
   min-height: $default-page-height;
   padding: (2 * $standard-margin) $standard-margin;
-
-  .gallery {
-    display: none;
-  }
 }
 
 @media screen and (min-width: $tablet-width) {
@@ -159,5 +155,12 @@
     @media only screen and (min-width: $widescreen-width) {
       font-size: 1vw;
     }
+  }
+}
+
+.portfolio-gallery {
+  &__button {
+    @include btn($white, $white, $main-light);
+    margin-left: 0;
   }
 }

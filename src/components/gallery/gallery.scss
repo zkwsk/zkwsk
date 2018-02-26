@@ -54,4 +54,13 @@ $aspect-ratio: 0.8;
       }
     }
   }
+
+  &-container--hidden {
+    display: none;
+  }
+
+  &__button {
+    @include btn($white, $white, $main-light);
+    margin-left: 0;
+  }
 }
