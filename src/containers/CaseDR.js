@@ -42,10 +42,10 @@ class CaseDR extends Component {
             </li>
             <li>
               <h3>Mad</h3>
-              <p>The site <a href="https://dr.dk/mad">Mad</a> is a recipe site designed to be a single outlot for food
+              <p>The site <a href="https://dr.dk/mad">Mad</a> is a recipe site designed to be a single outlet for food
               recipes for all of DRs different offerings.</p>
               <p>There was already a site that attempted to do that, but it did not perform well in terms of usability or
-              SEO and there was no way to couple recipes and Drupal content.</p>
+              SEO and there were no ways of coupling recipes and Drupal content.</p>
               <p>The site was build as an experiment that would later provide the foundation for future developement at DR.
               The architecture was based on a "headless CMS" model, meaning that rather than rendering pages in Drupal,
               an application was build to consume an API that would fetch data from Drupal.</p>

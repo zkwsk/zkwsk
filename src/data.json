@@ -33,7 +33,8 @@
           },
           {
             "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/nyhedsoverblikket.jpg",
-            "description": "2018 Redesign of the 'news overview' section found under most artickles."
+            "description": "2018 Redesign of the 'news overview' section found under most artickles.",
+            "fallbackColor": "rgb(198, 114, 109)"
           },
           {
             "link": "https://zkwsk.ams3.digitaloceanspaces.com/zkwsk_assets/mere_om.jpg",
@@ -160,11 +161,11 @@
         "period_end": "2014-07",
         "title": "Web Developer",
         "employer": "Airtame",
-        "description": "I did full-stack web development in Ruby on Rails. My main project was a custom-build internal system designed for manageing backer orders from their very succesfull Crowdfunding Campaign, but I also did some work on the user-facing website.",
+        "description": "I did full-stack web development in Ruby on Rails. My main project was a custom-build internal system designed for managing backer orders from their very succesfull Crowdfunding Campaign, but I also did some work on the user-facing website.",
         "label": "",
         "portfolio": {
           "show": true,
-          "description": "I did full-stack web development in Ruby on Rails. My main project was a custom-build internal system designed for manageing backer orders from their very succesfull Crowdfunding Campaign, but I also did some work on the user-facing website.",
+          "description": "I did full-stack web development in Ruby on Rails. My main project was a custom-build internal system designed for managing backer orders from their very succesfull Crowdfunding Campaign, but I also did some work on the user-facing website.",
           "background-color": "",
           "backdrop-color": "#01baef",
           "link": "https://airtame.com",
