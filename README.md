@@ -1,4 +1,6 @@
-## Hi there 👋
+## Hi 👋 I'm Zaki! Welcome to my Github 🐙
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=zkwsk)](https://github.com/zkwsk/github-profile-trophy)
 
 <!--
 **zkwsk/zkwsk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
