@@ -1,5 +1,7 @@
 ## Hi 👋 I'm Zaki! Welcome to my Github 🐙
 
+![stackoverflow-stats](https://github-stackoverflow-readme.vercel.app/?userId=864046)
+
 [![trophy](https://github-profile-trophy.vercel.app/?username=zkwsk)](https://github.com/zkwsk/github-profile-trophy)
 
 <!--
